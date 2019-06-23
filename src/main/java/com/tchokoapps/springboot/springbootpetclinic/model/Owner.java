@@ -54,6 +54,13 @@ public class Owner extends Person {
         this.pets = pets;
     }
 
+    public Owner() {
+    }
+
+    public Owner(Long id, String firstName, String lastName) {
+        super(id, firstName, lastName);
+    }
+
     public Owner(Long id, String firstName, String lastName, String address, String city, String telephone, Set<Pet> pets) {
         super(id, firstName, lastName);
         this.address = address;

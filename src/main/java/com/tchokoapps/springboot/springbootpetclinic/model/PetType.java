@@ -6,6 +6,13 @@ import javax.persistence.Entity;
 @Entity
 public class PetType extends BaseEntity {
 
+    public PetType() {
+    }
+
+    public PetType(String name) {
+        this.name = name;
+    }
+
     public PetType(Long id, String name) {
         super(id);
         this.name = name;
