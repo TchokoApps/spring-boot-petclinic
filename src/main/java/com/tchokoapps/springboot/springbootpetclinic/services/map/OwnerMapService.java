@@ -2,12 +2,11 @@ package com.tchokoapps.springboot.springbootpetclinic.services.map;
 
 import com.tchokoapps.springboot.springbootpetclinic.model.Owner;
 import com.tchokoapps.springboot.springbootpetclinic.services.OwnerService;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
 
-@Service
+//@Service
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {

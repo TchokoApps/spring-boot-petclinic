@@ -3,10 +3,12 @@ package com.tchokoapps.springboot.springbootpetclinic.services.impl;
 import com.tchokoapps.springboot.springbootpetclinic.model.Speciality;
 import com.tchokoapps.springboot.springbootpetclinic.repositories.SpecialityRepository;
 import com.tchokoapps.springboot.springbootpetclinic.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class SpecialityServiceImpl implements SpecialityService {
 
     private SpecialityRepository specialityRepository;

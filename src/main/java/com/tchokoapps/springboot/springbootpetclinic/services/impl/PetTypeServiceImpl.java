@@ -1,15 +1,20 @@
 package com.tchokoapps.springboot.springbootpetclinic.services.impl;
 
-import com.tchokoapps.springboot.springbootpetclinic.model.Pet;
 import com.tchokoapps.springboot.springbootpetclinic.model.PetType;
 import com.tchokoapps.springboot.springbootpetclinic.repositories.PetTypeRepository;
 import com.tchokoapps.springboot.springbootpetclinic.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class PetTypeServiceImpl implements PetTypeService {
     private PetTypeRepository petTypeRepository;
+
+    public PetTypeServiceImpl(PetTypeRepository petTypeRepository) {
+        this.petTypeRepository = petTypeRepository;
+    }
 
     @Override
     public Set<PetType> findAll() {

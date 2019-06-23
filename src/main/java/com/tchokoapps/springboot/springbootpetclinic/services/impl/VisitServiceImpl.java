@@ -1,14 +1,14 @@
 package com.tchokoapps.springboot.springbootpetclinic.services.impl;
 
-import com.tchokoapps.springboot.springbootpetclinic.model.Speciality;
 import com.tchokoapps.springboot.springbootpetclinic.model.Visit;
-import com.tchokoapps.springboot.springbootpetclinic.repositories.SpecialityRepository;
 import com.tchokoapps.springboot.springbootpetclinic.repositories.VisitRepository;
 import com.tchokoapps.springboot.springbootpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class VisitServiceImpl implements VisitService {
 
     private VisitRepository visitRepository;

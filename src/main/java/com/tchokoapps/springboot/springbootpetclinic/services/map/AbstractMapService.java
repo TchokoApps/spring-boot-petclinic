@@ -3,7 +3,6 @@ package com.tchokoapps.springboot.springbootpetclinic.services.map;
 import com.tchokoapps.springboot.springbootpetclinic.model.BaseEntity;
 
 import java.util.*;
-import java.util.function.Predicate;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
     protected Map<Long, T> map = new HashMap<>();
