@@ -1,4 +1,4 @@
-package com.tchokoapps.springboot.springbootpetclinic.controller;
+package com.tchokoapps.springboot.springbootpetclinic.controllers;
 
 import com.tchokoapps.springboot.springbootpetclinic.services.VetService;
 import org.springframework.stereotype.Controller;
