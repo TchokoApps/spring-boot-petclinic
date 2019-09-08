@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 @Entity
 public class PetType extends BaseEntity {
 
+    @Column(name = "name")
+    private String name;
+
     public PetType() {
     }
 
@@ -17,9 +20,6 @@ public class PetType extends BaseEntity {
         super(id);
         this.name = name;
     }
-
-    @Column(name = "name")
-    private String name;
 
     public String getName() {
         return name;
